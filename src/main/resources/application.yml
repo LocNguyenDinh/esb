@@ -1,0 +1,16 @@
+insurance:
+  pvi:
+    endpoint: ${PVI_ENDPOINT:https://apistg.pvi.com.vn/Campaign/InputTNDS_DT_MOTO}
+    cpId: ${PVI_CP_ID:GLOBALSAFE}
+    keyCP: ${PVI_KEY_CP:f6cca9002c83080ab968fdaa470rdccf10}
+    program: ${PVI_PROGRAM:DSDTXM}
+
+spring:
+  datasource:
+    url: jdbc:mariadb://27.74.249.62:10001/ESB
+    username: root
+    password: safeapp@2021
+    driver-class-name: org.mariadb.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
